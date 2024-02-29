@@ -1,0 +1,27 @@
+#pincode,
+#city,
+#state,
+#contact {
+  width: calc(50% - 5px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#pincode {
+  margin-right: 5px;
+}
+
+#city {
+  margin-left: 5px;
+}
+
+#state {
+  width: 100%;
+}
+
+#contact {
+  width: 100%;
+}
