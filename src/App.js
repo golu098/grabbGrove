@@ -8,7 +8,8 @@ import { Products } from './pages/products';
 import { Cart } from './pages/cart';
 import { NotFound } from './pages/not-found';
 import Checkout from "./pages/checkout/checkout";
-import { useCart } from './context/cart'
+import { useCart } from './context/cart';
+import Home from './pages/home/home';
 
 function App() {
   const navigate=useNavigate();
@@ -21,7 +22,9 @@ function App() {
     <>
       <Navbar onSearch={onSearch} cartItemCount={cartItemCount()} />
       <Routes>
-        <Route path='/' element={<Products />} />
+      <Route path='/' element={<Home/>} />
+
+        <Route path='/upshot' element={<Products />} />
         <Route path='/product/:productId' element={<Product />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
