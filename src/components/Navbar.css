@@ -1,0 +1,107 @@
+/* Navbar Styles */
+.menu-toggle {
+    display: none !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.menu-icon {
+    width: 25px !important;
+    height: 2px !important;
+    background-color: #000 !important;
+    margin: 6px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.open .menu-icon:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 7px) !important;
+}
+
+.open .menu-icon:nth-child(2) {
+    opacity: 0 !important;
+}
+
+.open .menu-icon:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -7px) !important;
+}
+
+.menu {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.menu.open {
+    flex-direction: column !important;
+}
+
+/* Navbar Brand */
+.brand {
+    font-size: 1.5rem !important;
+    margin-right: auto !important;
+}
+
+/* Search Form */
+.formContainer {
+    margin-left: auto !important;
+}
+
+.search {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.form-control {
+    margin-right: 10px !important;
+}
+
+.search-btn {
+    background-color: #007fff !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 8px 15px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+/* Cart Icon */
+.headerCart {
+    margin-left: 20px !important;
+    position: relative !important;
+}
+
+.cartCounter {
+    position: absolute !important;
+    top: -8px !important;
+    right: -8px !important;
+    background-color: #007fff !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    padding: 4px 8px !important;
+    font-size: 0.8rem !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block !important;
+    }
+    .menu {
+        display: none !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        background-color: #f9f9f9 !important;
+        width: 100% !important;
+        padding: 10px !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+    .open .menu {
+        display: flex !important;
+    }
+    .menu .link {
+        margin-bottom: 10px !important;
+    }
+}
