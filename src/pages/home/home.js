@@ -91,7 +91,9 @@ export default function Home() {
 </div>
 
 {/* trending Products */}
-
+<div className="flex justify-center items-center pt-5">
+<h1 className="text-center font-extrabold pt-4 font-weight-300 text-2xl mx-auto">Trending Products</h1>
+</div>
 <div class="p-1 flex flex-wrap items-center justify-center">
 
     <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
