@@ -17,7 +17,7 @@ const Checkout = () => {
   return (
     <div>
         <center>
-      <h1>Checkout Page</h1>
+        <h1 class="text-4xl text-center font-bold mt-8">Checkout Page</h1>
       </center>
       {/* Add checkout form and payment options here */}
       <div class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
@@ -47,29 +47,25 @@ const Checkout = () => {
       <label for="card-no" class="mt-4 mb-2 block text-sm font-medium">Card Details</label>
       <div class="flex">
         <div class="relative w-7/1 flex-shrink-0">
-          <input type="text" id="card-no" name="card-no" class="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder=" " />
-          <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
-            <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
-              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
-            </svg>
+          <input type="text" id="card-no" name="card-no" class="w-full rounded-md border border-gray-200  text-sm shadow-sm outline-none focus:z-5 focus:border-blue-500 focus:ring-blue-500" placeholder=" " />
+          <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-1">
+            {/* <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="currentColor" viewBox="0 0 16 16"> */}
+              {/* <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" /> */}
+              {/* <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" /> */}
+            {/* </svg> */}
           </div>
         </div>
         <input type="text" name="credit-expiry" class="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder=" " />
-        <input type="text" name="credit-cvc" class="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder=" " />
       </div>
       <label for="billing-address" class="mt-4 mb-2 block text-sm font-medium">Billing Address</label>
       <div class="flex flex-col sm:flex-row">
         <div class="relative flex-shrink-0 sm:w-7/12">
           <input type="text" id="billing-address" name="billing-address" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder=" " />
           <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
-            <img class="h-4 w-4 object-contain" src="" alt="" />
           </div>
         </div>
-        <select type="text" name="billing-state" class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500">
-          <option value="State">State</option>
-        </select>
-        <input type="text" name="billing-zip" class="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="" />
+        {/* <select type="text" name="billing-state" class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500">
+        </select> */}
       </div>
 
       <div class="mt-6 border-t border-b py-2">
