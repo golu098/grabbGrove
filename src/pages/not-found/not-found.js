@@ -6,7 +6,7 @@ const NotFound = () => {
             <div className="product py-2">
                 <div className="details p-3">
                     Page not found. Go to{" "}
-                    <Link to="/" replace>
+                    <Link to="/" className="text-red-600" replace>
                         homepage
                     </Link>
                     .

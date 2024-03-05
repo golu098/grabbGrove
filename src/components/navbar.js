@@ -61,8 +61,9 @@ const Navbar = ({ onSearch, cartItemCount }) => {
                                     <input type="text" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} placeholder="Search Products...." />
                                 </div>
                                 <button type="button" onClick={handleSubmit} className="search-btn">
-                                    Search
-                                </button>
+    Search
+</button>
+
                                 <Link to="/cart" className="link headerCart">
                                         <img className="cartImg" src="/cart.svg" alt="cart" />
                                         {cartItemCount > 0 && (
