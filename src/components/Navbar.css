@@ -1,9 +1,13 @@
 /* Navbar Styles */
 .menu-toggle {
-    display: none !important;
-    background: none !important;
-    border: none !important;
-    cursor: pointer !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 1rem; /* Adjust as needed */
+    top: 1rem; /* Adjust as needed */
+    z-index: 10;
 }
 
 .menu-icon {
@@ -57,7 +61,7 @@
 }
 
 .search-btn {
-    background-color: #007fff !important;
+    background-color: #ffa600a7 !important;
     color: #fff !important;
     border: none !important;
     padding: 8px 15px !important;
@@ -75,7 +79,7 @@
     position: absolute !important;
     top: -8px !important;
     right: -8px !important;
-    background-color: #007fff !important;
+    background-color: #ffa600a7 !important;
     color: #fff !important;
     border-radius: 50% !important;
     padding: 4px 8px !important;

@@ -10,6 +10,8 @@ import { NotFound } from './pages/not-found';
 import Checkout from "./pages/checkout/checkout";
 import { useCart } from './context/cart';
 import Home from './pages/home/home';
+import Login from "./pages/login/login";
+import footer from "./pages/footer/footer";
 
 function App() {
   const navigate=useNavigate();
@@ -29,8 +31,11 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
         <Route path="/checkout" element={<Checkout/>} /> 
+        <Route path="/login" element={<Login/>} /> 
+
 
       </Routes>
+      <footer/>
     </>
   );
 }

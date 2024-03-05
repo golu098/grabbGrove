@@ -241,7 +241,7 @@ img {
 }
 
 .wrapper {
-  background-color: #007fff;
+  background-color: #ffa600a7;
   color: #fff;
   text-align: center;
 }
@@ -366,7 +366,7 @@ input[type="text"] {
   height: 36px;
   transform: translate(-50%, -50%);
   border: 6px solid #fff;
-  border-top: 6px solid #007fff;
+  border-top: 6px solid #ffa600a7;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   -webkit-transform: translate(-50%, -50%);
@@ -435,7 +435,7 @@ img {
 }
 
 .titleLink:hover {
-  color: #007fff;
+  color: #ffa600a7;
   text-decoration: underline;
 }
 
@@ -444,7 +444,7 @@ img {
 }
 
 .price {
-  color: #007fff;
+  color: #ffa600a7;
   font-weight: 600;
 }
 
@@ -452,7 +452,7 @@ img {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background: #007fff;
+  background: #ffa600a7;
   color: #fff;
   border: none;
   font-size: 2rem;
